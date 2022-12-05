@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    position: absolute;
+    padding: 100px;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .text-box {
+    display: flex;
+    position: absolute;
+    padding: 100px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+    transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  /* Individual box transitions */
+  .one {
+    background-color: red;
+  }
+  
+  .two {
+    background-color: blue;
+  }
+  
+  .three {
+    background-color: yellow;
+  }
+  
+  .four {
+    background-color: green;
+  }
+  
+  /* Hover Tranisitions */
+  
+  .main:hover .one {
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+  
+  .main:hover .two {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+  }
+  
+  .main:hover .three {
+    transform: rotate(-90deg);
+    transform-origin: top right;
+  }
+  
+  .main:hover .four {
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+  }
+  
+  /* Non-Hover Tranisitions */
+  .main .one {
+    transform: rotate(0deg);
+    transform-origin: top left;
+  }
+  
+  .main .two {
+    transform: rotate(0deg);
+    transform-origin: bottom left;
+  }
+  
+  .main .three {
+    transform: rotate(0deg);
+    transform-origin: top right;
+  }
+  
+  .main .four {
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+  }
