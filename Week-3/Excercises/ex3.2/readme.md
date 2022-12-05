@@ -35,7 +35,7 @@ function order(firstname, lastname) {
 console.log("bind() : ");
 
 var orderprint = order.bind(item1);
-orderprint("Harshit", "Patel");
+orderprint("Pratyush", "Mahapatra");
 var orderprint = order.bind(item2);
 orderprint("John", "Smith");
 ```
@@ -44,9 +44,9 @@ orderprint("John", "Smith");
 
 ```sh
 bind() :
-Harshit Patel ordered Van Heusen Shirt
+Pratyush Mahapatra ordered Van Heusen Shirt
 John Smith ordered Spykar Jeans
-Harshit Patel ordered Adidas Shoes
+Pratyush Mahapatra ordered Adidas Shoes
 ```
 
 ### call() :
@@ -79,18 +79,18 @@ function order(firstname, lastname) {
 
 //call()
 console.log("call() : ");
-order.call(item1, "Harshit", "Patel");
+order.call(item1, "Pratyush", "Mahapatra");
 order.call(item2, "John", "Smith");
-order.call(item3, "Harshit", "Patel");
+order.call(item3, "Pratyush", "Mahapatra");
 ```
 
 ### Output
 
 ```sh
 call() :
-Harshit Patel ordered Van Heusen Shirt
+Pratyush Mahapatra ordered Van Heusen Shirt
 John Smith ordered Spykar Jeans
-Harshit Patel ordered Adidas Shoes
+Pratyush Mahapatra ordered Adidas Shoes
 ```
 
 ### apply() :
@@ -123,16 +123,16 @@ function order(firstname, lastname) {
 
 //apply()
 console.log("apply() : ");
-order.apply(item1, ["Harshit", "Patel"]);
+order.apply(item1, ["Pratyush", "Mahapatra"]);
 order.apply(item2, ["John", "Smith"]);
-order.apply(item3, ["Harshit", "Patel"]);
+order.apply(item3, ["Pratyush", "Mahapatra"]);
 ```
 
 ### Output
 
 ```sh
 apply() :
-Harshit Patel ordered Van Heusen Shirt
+Pratyush Mahapatra ordered Van Heusen Shirt
 John Smith ordered Spykar Jeans
-Harshit Patel ordered Adidas Shoes
+Pratyush Mahapatra ordered Adidas Shoes
 ```
